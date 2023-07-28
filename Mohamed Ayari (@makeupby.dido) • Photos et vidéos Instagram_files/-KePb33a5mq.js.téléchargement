@@ -1,0 +1,4 @@
+;/*FB_PKG_DELIM*/
+
+__d("getPolarisFeedPrefetchDistance",["PolarisUA"],(function(a,b,c,d,e,f,g){"use strict";var h=6,i=8;function a(){if(d("PolarisUA").isMobile())return h;else return i}g["default"]=a}),98);
+__d("usePolarisFeedSeenStateCleanup",["PolarisFeedSeenStateManagerSingleton","Run","react"],(function(a,b,c,d,e,f,g){"use strict";var h=d("react").useEffect;function a(){h(function(){var a=d("Run").onUnload(function(){var a=c("PolarisFeedSeenStateManagerSingleton").get();a.cache()});return function(){a.remove()}},[])}g["default"]=a}),98);
